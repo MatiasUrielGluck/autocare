@@ -1,5 +1,5 @@
 import { Box, IconButton } from "@mui/material";
-import { HomeTemplate } from "../templates/HomeTemplate";
+import { HomeTemplate } from "../../templates/HomeTemplate";
 import AmbulanceIcon from "/src/assets/icon/ambulance.png";
 import FireFighterIcon from "/src/assets/icon/fireFighter.png";
 import PoliceIcon from "/src/assets/icon/police.png";
@@ -35,7 +35,7 @@ export const EmegencyPage = () => {
                             borderRadius: "20px",
                             bgcolor: "#211F26",
                             textAlign: "center",
-                            width: "75%",
+                            width: "80%",
                         }} >
                         <p>Emergencias</p>
                     </Box>
@@ -43,7 +43,7 @@ export const EmegencyPage = () => {
                 <Box  sx={{ paddingBottom: 4, display: "flex", justifyContent: "center" }}>
                     <Box
                         sx={{
-                            width: "65%",
+                            width: "80%",
                             paddingX: 3,
                             paddingY: 3,
                             borderRadius: "20px",
