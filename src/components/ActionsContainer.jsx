@@ -3,8 +3,15 @@ import FiatLogo from "../assets/logo/fiat.png";
 import ManualIcon from "../assets/icon/manual.png";
 import AlertIcon from "../assets/icon/alert.png";
 import TableroIcon from "../assets/icon/tablero.png";
+import { useNavigate } from "react-router-dom";
 
 export const ActionsContainer = () => {
+  const navigate = useNavigate()
+
+  const handleIHaveAnEmergency = () => {
+    navigate("/emergencia")
+  }
+
   return (
     <Box>
       <Box
@@ -103,6 +110,7 @@ export const ActionsContainer = () => {
             variant="contained"
             size="small"
             color="primary"
+            onClick={handleIHaveAnEmergency}
           >
             Tengo una emergencia
           </Button>
