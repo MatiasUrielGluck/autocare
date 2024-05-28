@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { sampleLoader } from "../../helpers/openai";
+import store from "../store";
 
 export const searchSlice = createSlice({
     name: "searchResult",
@@ -73,11 +74,9 @@ export const searchSlice = createSlice({
         },
         doQuery: (state) => {
             state.loading = true
-            let result = sampleLoader(state.query)
-            state.result = result
-            state.loading = false
-            // console.log(result)
-            // setResult(state, result)
+            sampleLoader(state.query).then(e => {
+                store.dispatch(setResult(e))
+            })
         },
         setResult: (state, action) => {
             state.loading = false

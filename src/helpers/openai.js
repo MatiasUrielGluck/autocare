@@ -20,6 +20,7 @@ export const openai_test = async () => {
 }
 
 
-export const sampleLoader = (query) => {
-  return query
+export const sampleLoader = async (query) => {
+
+  return "ESTO FUNCIONA"
 }

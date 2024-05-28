@@ -9,6 +9,7 @@ import { LinearProgress } from "@mui/material";
 
 export const SearchResultPage = () => {
   const searchStore = useSelector((state) => state.searchResult);
+
   return (
     <HomeTemplate>
       {searchStore.loading && <LinearProgress />}
