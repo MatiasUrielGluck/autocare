@@ -7,7 +7,7 @@ export const HomePage = () => {
   return (
     <HomeTemplate hideGoBackButton>
       <CarInfo />
-      <SearchBar />
+      <SearchBar allowRouteBack />
       <ActionsContainer />
     </HomeTemplate>
   );

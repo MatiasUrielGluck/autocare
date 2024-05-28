@@ -11,16 +11,32 @@ import {
 } from "@mui/material";
 import { openai_test } from "../helpers/openai";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { doQuery, setQuery } from "../store/searchResult/searchSlice";
 
-export const SearchBar = () => {
-  const [searchQuery, setSearchQuery] = useState("");
+export const SearchBar = ({ children, allowRouteBack }) => {
+  // const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
+
+  const searchStore = useSelector((state) => state.searchResult);
+  const dispatch = useDispatch();
 
   const inputChange = (e) => {
-    setSearchQuery(e.target.value);
+    dispatch(setQuery(e));
+  };
+
+  const handleResult = () => {
+    callOpenAi();
+
+    if (allowRouteBack) {
+      navigate("/result");
+    }
   };
 
   const callOpenAi = async () => {
-    await openai_test();
+    dispatch(doQuery());
+    // await openai_test();
   };
 
   return (
@@ -43,8 +59,8 @@ export const SearchBar = () => {
           variant="filled"
         >
           <TextField
-            onChange={(e) => inputChange(e)}
-            value={searchQuery}
+            onChange={(e) => inputChange(e.target.value)}
+            value={searchStore.query}
             id="outlined-textarea"
             label="Buscar"
             placeholder="Realice una consulta"
@@ -52,8 +68,12 @@ export const SearchBar = () => {
             InputProps={{
               endAdornment: (
                 <InputAdornment position="end">
-                  <IconButton onClick={() => setSearchQuery("")}>
-                    {searchQuery ? <Close /> : <Icon />}
+                  <IconButton
+                    onClick={() => {
+                      inputChange("");
+                    }}
+                  >
+                    {searchStore.query !== "" ? <Close /> : <Icon />}
                   </IconButton>
                 </InputAdornment>
               ),
@@ -64,7 +84,7 @@ export const SearchBar = () => {
           sx={{ borderRadius: 50 }}
           variant="contained"
           color="success"
-          onClick={callOpenAi}
+          onClick={handleResult}
         >
           Buscar
         </Button>
