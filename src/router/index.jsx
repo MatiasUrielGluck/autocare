@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { EmegencyPage } from "../pages/home/emergency.page.jsx";
 import { HomePage } from "../pages/home/home.page.jsx";
 import { ProblemsCategoryPage } from "../pages/home/problems.page.jsx";
+import { SearchResultPage } from "../pages/home/searchresult.page.jsx";
 
 export default createBrowserRouter([
   {
@@ -14,6 +15,10 @@ export default createBrowserRouter([
   },
   {
     path: "/emergencia",
-    element: <EmegencyPage />
-  }
+    element: <EmegencyPage />,
+  },
+  {
+    path: "/result",
+    element: <SearchResultPage />,
+  },
 ]);

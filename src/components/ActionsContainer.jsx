@@ -6,11 +6,11 @@ import TableroIcon from "../assets/icon/tablero.png";
 import { useNavigate } from "react-router-dom";
 
 export const ActionsContainer = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleIHaveAnEmergency = () => {
-    navigate("/emergencia")
-  }
+    navigate("/emergencia");
+  };
 
   return (
     <Box>
