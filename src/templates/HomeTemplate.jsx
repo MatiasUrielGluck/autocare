@@ -9,16 +9,18 @@ export const HomeTemplate = ({ children, hideGoBackButton }) => {
   const [open, setOpen] = useState(false);
 
   const ButtonGoBackWrapper = () => (
-    <Box sx={{
-      position: "fixed",
-      bottom: 100,
-      paddingY: 1,
-      display: "flex",
-      justifyContent: "start"
-      }}>
-        <ButtonGoBack />
-      </Box>
-    )
+    <Box
+      sx={{
+        position: "fixed",
+        bottom: 100,
+        paddingY: 1,
+        display: "flex",
+        justifyContent: "start",
+      }}
+    >
+      <ButtonGoBack />
+    </Box>
+  );
 
   return (
     <Box
@@ -29,7 +31,7 @@ export const HomeTemplate = ({ children, hideGoBackButton }) => {
         flexWrap: "nowrap",
         alignItems: "center",
         justifyContent: "center",
-        height: "100%"
+        height: "100%",
       }}
     >
       <Box sx={{ display: "flex", width: "100%" }}>
@@ -43,10 +45,8 @@ export const HomeTemplate = ({ children, hideGoBackButton }) => {
       <Drawer open={open} onClose={() => setOpen(false)}>
         <DrawerList toggleDrawer={() => setOpen(false)} />
       </Drawer>
-        <Box>
-          {children}
-        </Box>
-        {!hideGoBackButton && <ButtonGoBackWrapper />}
+      <Box>{children}</Box>
+      {!hideGoBackButton && <ButtonGoBackWrapper />}
       <BottomNavigator />
       <div style={{ marginBottom: 100 }}></div>
     </Box>

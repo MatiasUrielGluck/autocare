@@ -12,9 +12,8 @@ export const SearchResultPage = () => {
 
   return (
     <HomeTemplate>
-      {searchStore.loading && <LinearProgress />}
       <SearchBar />
-      <ResultBox />
+      {searchStore.loading ? <LinearProgress /> : <ResultBox />}
     </HomeTemplate>
   );
 };

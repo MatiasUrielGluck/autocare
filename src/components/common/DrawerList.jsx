@@ -1,12 +1,20 @@
-import { Box, Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+import {
+  Box,
+  Divider,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+} from "@mui/material";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
 
 export const DrawerList = ({ toggleDrawer }) => {
   return (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer}>
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+        {["Mi perfil", "Historial auto"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -19,7 +27,7 @@ export const DrawerList = ({ toggleDrawer }) => {
       </List>
       <Divider />
       <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
+        {["Danos tu feedback"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -31,5 +39,5 @@ export const DrawerList = ({ toggleDrawer }) => {
         ))}
       </List>
     </Box>
-  )
-}
+  );
+};

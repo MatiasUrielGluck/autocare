@@ -8,19 +8,24 @@ const openai = new OpenAI({
   dangerouslyAllowBrowser: true
 });
 
-export const openai_test = async () => {
+export const openai_test = async (query) => {
 
-
+  console.log("Calling GPT")
   const chatCompletion = await openai.chat.completions.create({
-    messages: [{ role: 'user', content: 'Say this is a test' }],
+    messages: [{ role: 'user', content: `Eres un mecanico experto en autos y respondes: ${query}` }],
     model: 'gpt-3.5-turbo',
   });
 
-  console.warn(chatCompletion);
+
+  if (chatCompletion.choices.length > 0) {
+    let msg = chatCompletion.choices[0].message.content
+
+    return msg
+  }
 }
 
 
 export const sampleLoader = async (query) => {
-
-  return "ESTO FUNCIONA"
+  let response = await openai_test(query)
+  return response
 }
