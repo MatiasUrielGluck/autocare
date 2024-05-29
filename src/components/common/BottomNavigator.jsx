@@ -2,8 +2,11 @@ import { BottomNavigation, BottomNavigationAction, Box } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import HelpIcon from "@mui/icons-material/Help";
 import NotificationIcon from "@mui/icons-material/Notifications";
+import { Link, useNavigate } from "react-router-dom";
 
 export const BottomNavigator = () => {
+  const navigate = useNavigate()
+
   return (
     <Box
       sx={{
@@ -15,7 +18,7 @@ export const BottomNavigator = () => {
       }}
     >
       <BottomNavigation sx={{ background: "#211F26" }} showLabels>
-        <BottomNavigationAction label="Menu principal" icon={<HomeIcon />} />
+        <BottomNavigationAction label="Menu principal" icon={<HomeIcon />} onClick={() => navigate("/")git } />
         <BottomNavigationAction label="Ayuda" icon={<HelpIcon />} />
         <BottomNavigationAction
           label="Notificaciones"
