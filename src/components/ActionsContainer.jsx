@@ -12,6 +12,10 @@ export const ActionsContainer = () => {
     navigate("/emergencia");
   };
 
+  const handleRouteCategoriaProblemas = () => {
+    navigate("/problemas");
+  };
+
   return (
     <Box>
       <Box
@@ -37,6 +41,7 @@ export const ActionsContainer = () => {
         >
           <img style={{ width: "100%" }} src={FiatLogo} />
           <Button
+            onClick={handleRouteCategoriaProblemas}
             sx={{
               borderRadius: 50,
               padding: "4px",

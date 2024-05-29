@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 
 export const ResultBox = () => {
   const searchStore = useSelector((state) => state.searchResult);
-  const dispatch = useDispatch();
 
   return (
     <>
