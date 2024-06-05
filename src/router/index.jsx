@@ -4,6 +4,7 @@ import { HomePage } from "../pages/home/home.page.jsx";
 import { ProblemsCategoryPage } from "../pages/home/problems.page.jsx";
 import { SearchResultPage } from "../pages/home/searchresult.page.jsx";
 import { CategoriaItemPage } from "../pages/categoria_item/categoria_item.page.jsx";
+import { NotificationsPage } from "../pages/home/notifications.page.jsx";
 
 export default createBrowserRouter([
   {
@@ -25,5 +26,9 @@ export default createBrowserRouter([
   {
     path: "/result",
     element: <SearchResultPage />,
+  },
+  {
+    path: "/notifications",
+    element: <NotificationsPage />,
   },
 ]);
