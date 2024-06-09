@@ -1,4 +1,4 @@
-import { Box, Button, IconButton } from "@mui/material"
+import { Box, IconButton } from "@mui/material"
 import { useNavigate } from "react-router-dom";
 import GoBackIcon from "/src/assets/icon/goback.png";
 
@@ -16,7 +16,7 @@ export const ButtonGoBack = () => {
         onClick={handleGoBack}>
             <Box sx={{ paddingLeft: 2, paddingRight: 2 }}>
                 <img src={GoBackIcon} style={{ paddingRight: 10 }} />
-                Volver
+                <span style={{ color: "#29b6f6" }}>Volver</span>
             </Box>
         </IconButton>
 }

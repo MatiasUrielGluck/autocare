@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Divider,
@@ -7,9 +8,10 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
-import { useNavigate } from "react-router-dom";
+import PersonIcon from "@mui/icons-material/Person";
+import CommentIcon from "@mui/icons-material/Comment";
+import HistoryIcon from "@mui/icons-material/History";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 export const DrawerList = ({ toggleDrawer }) => {
   const navigate = useNavigate();
@@ -18,10 +20,17 @@ export const DrawerList = ({ toggleDrawer }) => {
     {
       label: "Mi perfil",
       route: "/",
+      icon: <PersonIcon />,
     },
     {
       label: "Historial auto",
       route: "/history",
+      icon: <HistoryIcon />,
+    },
+    {
+      label: "VTV",
+      route: "/vtv",
+      icon: <DescriptionIcon />,
     },
   ];
 
@@ -35,9 +44,7 @@ export const DrawerList = ({ toggleDrawer }) => {
             onClick={() => navigate(item.route)}
           >
             <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
+              <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText primary={item.label} />
             </ListItemButton>
           </ListItem>
@@ -49,7 +56,7 @@ export const DrawerList = ({ toggleDrawer }) => {
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                <CommentIcon />
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>

@@ -49,10 +49,10 @@ export const HistorialPage = () => {
           <IconButton
             sx={{ borderRadius: 50, backgroundColor: "#3a3643" }}
             variant="contained"
-            color="success"
+            color="info"
             onClick={handleAdd}
           >
-            <AddCircle /> <span style={{ marginLeft: 4 }}>Agregar</span>
+            <AddCircle /> <span style={{ marginLeft: 4 }} >Agregar</span>
           </IconButton>
         </Box>
       </Container>

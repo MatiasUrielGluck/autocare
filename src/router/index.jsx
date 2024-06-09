@@ -6,6 +6,7 @@ import { SearchResultPage } from "../pages/home/searchresult.page.jsx";
 import { CategoriaItemPage } from "../pages/categoria_item/categoria_item.page.jsx";
 import { NotificationsPage } from "../pages/home/notifications.page.jsx";
 import { HistorialPage } from "../pages/historial/historial.page.jsx";
+import { VtvPage } from "../pages/vtv/VtvPage.jsx";
 
 export default createBrowserRouter([
   {
@@ -35,5 +36,9 @@ export default createBrowserRouter([
   {
     path: "/history",
     element: <HistorialPage />,
+  },
+  {
+    path: "/vtv",
+    element: <VtvPage />,
   },
 ]);
