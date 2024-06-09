@@ -17,8 +17,10 @@ export const NotificationsPage = () => {
     <HomeTemplate hideGoBackButton>
       <Container maxWidth="lg">
         {notificationsStore.notifications.length ? (
-          notificationsStore.notifications.map((notification) => {
-            return <NotificationTextBox notification={notification} />;
+          notificationsStore.notifications.map((notification, index) => {
+            return (
+              <NotificationTextBox notification={notification} key={index} />
+            );
           })
         ) : (
           <Typography>Sin notificaciones</Typography>

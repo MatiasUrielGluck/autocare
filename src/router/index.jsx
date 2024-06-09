@@ -5,6 +5,7 @@ import { ProblemsCategoryPage } from "../pages/home/problems.page.jsx";
 import { SearchResultPage } from "../pages/home/searchresult.page.jsx";
 import { CategoriaItemPage } from "../pages/categoria_item/categoria_item.page.jsx";
 import { NotificationsPage } from "../pages/home/notifications.page.jsx";
+import { HistorialPage } from "../pages/historial/historial.page.jsx";
 
 export default createBrowserRouter([
   {
@@ -30,5 +31,9 @@ export default createBrowserRouter([
   {
     path: "/notifications",
     element: <NotificationsPage />,
+  },
+  {
+    path: "/history",
+    element: <HistorialPage />,
   },
 ]);
