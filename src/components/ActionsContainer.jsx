@@ -16,6 +16,10 @@ export const ActionsContainer = () => {
     navigate("/problemas");
   };
 
+  const handleRouteManualView = () => {
+    navigate("/manual");
+  };
+
   return (
     <Box>
       <Box
@@ -85,6 +89,7 @@ export const ActionsContainer = () => {
             variant="contained"
             size="small"
             color="primary"
+            onClick={handleRouteManualView}
           >
             Manual
           </Button>

@@ -7,6 +7,7 @@ import { CategoriaItemPage } from "../pages/categoria_item/categoria_item.page.j
 import { NotificationsPage } from "../pages/home/notifications.page.jsx";
 import { HistorialPage } from "../pages/historial/historial.page.jsx";
 import { VtvPage } from "../pages/vtv/VtvPage.jsx";
+import { ManualPage } from "../pages/manual/manual.page.jsx";
 
 export default createBrowserRouter([
   {
@@ -40,5 +41,9 @@ export default createBrowserRouter([
   {
     path: "/vtv",
     element: <VtvPage />,
+  },
+  {
+    path: "/manual",
+    element: <ManualPage />,
   },
 ]);
