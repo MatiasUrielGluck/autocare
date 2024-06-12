@@ -9,6 +9,7 @@ import { HistorialPage } from "../pages/historial/historial.page.jsx";
 import { VtvPage } from "../pages/vtv/VtvPage.jsx";
 import { ManualPage } from "../pages/manual/manual.page.jsx";
 import { Perfil } from "../pages/perfil/perfil.jsx";
+import { TableroPage } from "../pages/tablero/tablero.page.jsx";
 
 export default createBrowserRouter([
   {
@@ -49,6 +50,10 @@ export default createBrowserRouter([
   },
   {
     path: "/perfil",
-    element: <Perfil />
-  }
+    element: <Perfil />,
+  },
+  {
+    path: "/dashboard",
+    element: <TableroPage />,
+  },
 ]);
