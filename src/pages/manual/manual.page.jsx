@@ -7,6 +7,8 @@ import "react-pdf/dist/Page/TextLayer.css";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import { perfilSelectors } from "../../store/perfil/perfilSlice";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.mjs",
@@ -16,6 +18,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 export const ManualPage = () => {
   const [pageNumber, setPageNumber] = useState(1);
   const [totalPages, setTotalPages] = useState();
+
+  const selectedCarInfo = useSelector(perfilSelectors.getSelectedCarInfo)
 
   const handleNextPage = () => {
     pageNumber < totalPages ? setPageNumber(pageNumber + 1) : setPageNumber(1);
@@ -64,7 +68,7 @@ export const ManualPage = () => {
           >
             <TransformComponent>
               <Document
-                file={"/manuals/Fiat Mobi 2016.pdf"}
+                file={selectedCarInfo.manualSrc}
                 onItemClick={handleItemClick}
                 onLoadSuccess={handleLoadData}
               >
