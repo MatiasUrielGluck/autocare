@@ -8,7 +8,7 @@ import { perfilSelectors } from "../store/perfil/perfilSlice";
 
 export const ActionsContainer = () => {
   const navigate = useNavigate();
-  const selectedCarInfo = useSelector(perfilSelectors.getSelectedCarInfo)
+  const selectedCarInfo = useSelector(perfilSelectors.getSelectedCarInfo);
 
   const handleIHaveAnEmergency = () => {
     navigate("/emergencia");
@@ -20,6 +20,10 @@ export const ActionsContainer = () => {
 
   const handleRouteManualView = () => {
     navigate("/manual");
+  };
+
+  const handleRouteDashView = () => {
+    navigate("/dashboard");
   };
 
   return (
@@ -152,6 +156,7 @@ export const ActionsContainer = () => {
             variant="contained"
             size="small"
             color="primary"
+            onClick={handleRouteDashView}
           >
             Mi tablero
           </Button>
