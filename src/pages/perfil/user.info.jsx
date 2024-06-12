@@ -77,7 +77,7 @@ export const UserInfo = () => {
                 <Box sx={{ display: "flex", alignItems: "center", columnGap: 3 }}>
                     {editing &&
                         <Box sx={{ display: "flex", flexDirection: "column", rowGap: 1 }}>
-                            <Box>
+                            <Box sx={{ display: "flex", alignItems: "center", columnGap: 2 }}>
                                 <TextField 
                                     id="outlined-basic"
                                     label=""
