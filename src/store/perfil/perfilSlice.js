@@ -22,14 +22,24 @@ const defaultCars = [
     }
 ]
 
+const defaultUserData = {
+  mail: "feliperandom@gmail.com",
+  phoneNumber: "1123456789",
+}
+
 export const perfilSlice = createSlice({
   name: "perfil",
-  initialState: { selectedCar: 1, cars: defaultCars },
+  initialState: { selectedCar: 1, cars: defaultCars, userData: defaultUserData },
   reducers: {
     selectCar: (state, action) => {
       const { id } = action.payload;
       console.log(id)
       state.selectedCar = id;
+    },
+    editUserMail: (state, action) => {
+      const { newMail } = action.payload;
+      console.log(newMail)
+      state.userData.mail = newMail
     },
   },
 });
@@ -43,9 +53,10 @@ export const perfilSelectors = {
     },
     getCars: (state) => state.perfil.cars,
     getSelectedCarId: (state) => state.perfil.selectedCar,
+    getUserData: (state) => state.perfil.userData
 }
 
 // Action creators are generated for each case reducer function
-export const { selectCar } = perfilSlice.actions;
+export const { selectCar, editUserMail } = perfilSlice.actions;
 
 export default perfilSlice.reducer;
