@@ -16,7 +16,7 @@ export const CarInfo = ({ info }) => {
             color="text.secondary"
             component="div"
           >
-            {"Auto: " + nombre}
+            {nombre}
           </Typography>
           <Typography
             variant="subtitle1"
