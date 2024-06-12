@@ -8,6 +8,7 @@ import { NotificationsPage } from "../pages/home/notifications.page.jsx";
 import { HistorialPage } from "../pages/historial/historial.page.jsx";
 import { VtvPage } from "../pages/vtv/VtvPage.jsx";
 import { ManualPage } from "../pages/manual/manual.page.jsx";
+import { Perfil } from "../pages/perfil/perfil.jsx";
 
 export default createBrowserRouter([
   {
@@ -46,4 +47,8 @@ export default createBrowserRouter([
     path: "/manual",
     element: <ManualPage />,
   },
+  {
+    path: "/perfil",
+    element: <Perfil />
+  }
 ]);

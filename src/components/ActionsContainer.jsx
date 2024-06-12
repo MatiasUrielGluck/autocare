@@ -1,12 +1,14 @@
 import { Box, Button } from "@mui/material";
-import FiatLogo from "../assets/logo/fiat.png";
 import ManualIcon from "../assets/icon/manual.png";
 import AlertIcon from "../assets/icon/alert.png";
 import TableroIcon from "../assets/icon/tablero.png";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { perfilSelectors } from "../store/perfil/perfilSlice";
 
 export const ActionsContainer = () => {
   const navigate = useNavigate();
+  const selectedCarInfo = useSelector(perfilSelectors.getSelectedCarInfo)
 
   const handleIHaveAnEmergency = () => {
     navigate("/emergencia");
@@ -43,7 +45,7 @@ export const ActionsContainer = () => {
             bgcolor: "primary.light",
           }}
         >
-          <img style={{ width: "100%" }} src={FiatLogo} />
+          <img style={{ width: "100%" }} src={selectedCarInfo.brandImage} />
           <Button
             onClick={handleRouteCategoriaProblemas}
             sx={{

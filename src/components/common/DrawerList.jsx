@@ -19,7 +19,7 @@ export const DrawerList = ({ toggleDrawer }) => {
   const drawerItems = [
     {
       label: "Mi perfil",
-      route: "/",
+      route: "/perfil",
       icon: <PersonIcon />,
     },
     {
