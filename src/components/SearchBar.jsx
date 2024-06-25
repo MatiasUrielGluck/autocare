@@ -62,7 +62,7 @@ export const SearchBar = ({ children, allowRouteBack }) => {
             onChange={(e) => inputChange(e.target.value)}
             value={searchStore.query}
             id="outlined-textarea"
-            label="Buscar"
+            label="Busqueda con IA"
             placeholder="Realice una consulta"
             multiline
             InputProps={{

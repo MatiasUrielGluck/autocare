@@ -6,6 +6,7 @@ import { Card, CardContent, LinearProgress } from "@mui/material";
 import { HomeTemplate } from "../../templates/HomeTemplate";
 import Carousel from "react-material-ui-carousel";
 import { MediaView } from "../../components/MediaView";
+import { LockedPremium } from "../../components/common/LockedPremium";
 
 export const CategoriaItemPage = () => {
   const { id } = useParams();
@@ -43,7 +44,9 @@ export const CategoriaItemPage = () => {
         </div>
 
         {categoriasStore.viewingCategoria.gallery && (
-          <MediaView gallery={categoriasStore.viewingCategoria.gallery} />
+          <LockedPremium>
+            <MediaView gallery={categoriasStore.viewingCategoria.gallery} />
+          </LockedPremium>
         )}
       </Card>
     </HomeTemplate>

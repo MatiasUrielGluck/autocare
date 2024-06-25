@@ -16,15 +16,13 @@ export const MediaView = ({ gallery }) => {
   };
   if (!view) {
     return (
-      <>
-        <Button
-          onClick={handleViewGaleria}
-          variant="contained"
-          sx={{ margin: "1rem" }}
-        >
-          Ver contenido
-        </Button>
-      </>
+      <Button
+        onClick={handleViewGaleria}
+        variant="contained"
+        sx={{ margin: "1rem" }}
+      >
+        Ver contenido
+      </Button>
     );
   }
   return (

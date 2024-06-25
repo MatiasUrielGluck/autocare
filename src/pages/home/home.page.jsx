@@ -4,15 +4,18 @@ import { ActionsContainer } from "../../components/ActionsContainer";
 import { HomeTemplate } from "../../templates/HomeTemplate";
 import { useSelector } from "react-redux";
 import { perfilSelectors } from "../../store/perfil/perfilSlice";
+import { LockedPremium } from "../../components/common/LockedPremium";
 
 export const HomePage = () => {
-    const selectedCardInfo = useSelector(perfilSelectors.getSelectedCarInfo)
-console.log(selectedCardInfo)
-    return (
-      <HomeTemplate hideGoBackButton>
-        <CarInfo info={selectedCardInfo} />
+  const selectedCardInfo = useSelector(perfilSelectors.getSelectedCarInfo);
+  console.log(selectedCardInfo);
+  return (
+    <HomeTemplate hideGoBackButton>
+      <CarInfo info={selectedCardInfo} />
+      <LockedPremium>
         <SearchBar allowRouteBack />
-        <ActionsContainer />
-      </HomeTemplate>
-    );
+      </LockedPremium>
+      <ActionsContainer />
+    </HomeTemplate>
+  );
 };

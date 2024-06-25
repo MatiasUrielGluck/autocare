@@ -5,6 +5,7 @@ import TableroIcon from "../assets/icon/tablero.png";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { perfilSelectors } from "../store/perfil/perfilSlice";
+import { LockedPremium } from "./common/LockedPremium";
 
 export const ActionsContainer = () => {
   const navigate = useNavigate();
@@ -147,19 +148,21 @@ export const ActionsContainer = () => {
             bgcolor: "primary.light",
           }}
         >
-          <Button
-            sx={{
-              borderRadius: 50,
-              padding: "10px",
-              lineHeight: "18px",
-            }}
-            variant="contained"
-            size="small"
-            color="primary"
-            onClick={handleRouteDashView}
-          >
-            Mi tablero
-          </Button>
+          <LockedPremium>
+            <Button
+              sx={{
+                borderRadius: 50,
+                padding: "10px",
+                lineHeight: "18px",
+              }}
+              variant="contained"
+              size="small"
+              color="primary"
+              onClick={handleRouteDashView}
+            >
+              Mi tablero
+            </Button>
+          </LockedPremium>
         </Box>
       </Box>
     </Box>
