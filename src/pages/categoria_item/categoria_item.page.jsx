@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Card, CardContent, LinearProgress } from "@mui/material";
 import { HomeTemplate } from "../../templates/HomeTemplate";
 import Carousel from "react-material-ui-carousel";
+import { MediaView } from "../../components/MediaView";
+import { LockedPremium } from "../../components/common/LockedPremium";
 
 export const CategoriaItemPage = () => {
   const { id } = useParams();
@@ -29,24 +31,24 @@ export const CategoriaItemPage = () => {
       <Card
         sx={{
           display: "flex",
+          flexDirection: "column",
           // width: "100vw",
-          height: "50vh",
+          // height: "70vh",
           borderRadius: "1rem",
           padding: "1rem",
           margin: "2rem",
         }}
       >
-        <div style={{ textWrap: "wrap", overflowX: "auto" }}>
+        <div style={{ textWrap: "wrap", overflowX: "auto", maxHeight: "30vh" }}>
           <p>{categoriasStore.viewingCategoria.info}</p>
         </div>
-      </Card>
 
-      <Carousel swipe sx={{ margin: "2rem" }}>
-        {categoriasStore.viewingCategoria.images &&
-          categoriasStore.viewingCategoria.images.map((img, idx) => (
-            <img key={idx} src={`${img}`} style={{ height: "20vh" }} />
-          ))}
-      </Carousel>
+        {categoriasStore.viewingCategoria.gallery && (
+          <LockedPremium>
+            <MediaView gallery={categoriasStore.viewingCategoria.gallery} />
+          </LockedPremium>
+        )}
+      </Card>
     </HomeTemplate>
   );
 };
