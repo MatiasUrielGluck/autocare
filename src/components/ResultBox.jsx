@@ -15,8 +15,8 @@ export const ResultBox = () => {
           borderRadius: "1rem",
         }}
       >
-        <div style={{ textWrap: "wrap", overflowX: "auto" }}>
-          <p>{searchStore.result}</p>
+        <div style={{ textWrap: "wrap", overflowX: "auto", padding: 4 }}>
+          <p dangerouslySetInnerHTML={{__html: searchStore.result.replaceAll("\n", "<br /><br />")}} style={{ marginBottom: 56 }}></p>
         </div>
       </Card>
     </>
