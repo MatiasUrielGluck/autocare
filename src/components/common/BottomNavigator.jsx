@@ -23,7 +23,6 @@ export const BottomNavigator = () => {
           icon={<HomeIcon />}
           onClick={() => navigate("/")}
         />
-        <BottomNavigationAction label="Ayuda" icon={<HelpIcon />} />
         <BottomNavigationAction
           label="Notificaciones"
           icon={<NotificationIcon />}

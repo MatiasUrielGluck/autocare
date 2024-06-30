@@ -112,7 +112,7 @@ export const VtvPage = () => {
           )}
 
           <Typography marginTop="24px" variant="h6">
-            ¿Qué es la VTV?
+            <a style={{ color: 'blue' }} href="https://buenosaires.gob.ar/tramites/verificacion-tecnica-vehicular-obligatoria">¿Qué es la VTV?</a>
           </Typography>
         </Box>
       </Container>
