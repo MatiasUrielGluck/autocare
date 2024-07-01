@@ -58,6 +58,12 @@ export const MediaView = ({ gallery }) => {
                     }}
                   >
                     <Typography variant="subtitle2">{media.caption}</Typography>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: media.caption.replaceAll("\n", "<br /><br />"),
+                      }}
+                      style={{ marginBottom: 56 }}
+                    ></p>
                   </Container>
                 </Box>
               </Container>

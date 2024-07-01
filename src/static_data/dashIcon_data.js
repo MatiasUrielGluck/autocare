@@ -1,274 +1,47 @@
 export const dashIconsData = [
   {
-    tittle: "Faro 1",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae.A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi.Nobis temporibus voluptatem, assumenda aut nisi sequi,
-    corporis ipsam rem, magnam numquam natus.Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non.Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
-    imgPath: "/img/carIcons/dash_03.jpg"
-  },
-  {
-    tittle: "Faro 2",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
+    tittle: "Comando de Luz",
+    desc: `Indican que se está usando luces altas y/o de emergencia.`,
     imgPath: "/img/carIcons/dash_04.jpg"
   },
   {
-    tittle: "Faro 3",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
-    imgPath: "/img/carIcons/dash_05.jpg"
-  },
-  {
-    tittle: "Faro 4",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
-    imgPath: "/img/carIcons/dash_06.jpg"
-  },
-  {
-    tittle: "Item 1",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
+    tittle: "Control de tracción y de estabilidad",
+    desc: `Representado con un carro en un camino con curvas, este testigo también conocido como Electronic Stability Program (ESP), se enciende cuando está en funcionamiento, esto puede ocurrir, por ejemplo, cuando detecta una pérdida de adherencia al suelo en alguno de los neumáticos. Este foco no indica necesariamente una falla, más bien hace referencia a que está trabajando para mejorar la estabilidad de la unidad.`,
     imgPath: "/img/carIcons/dash_07.jpg"
   },
   {
-    tittle: "Reclinar 1",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
-    imgPath: "/img/carIcons/dash_08.jpg"
-  },
-  {
-    tittle: "Aire 1",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
+    tittle: "Desempañador de parabrisas",
+    desc: `Este artefacto se utiliza en días de lluvia o mucho frío, y tal como su nombre lo indica, sirve para desempañar los cristales del parabrisas.`,
     imgPath: "/img/carIcons/dash_09.jpg"
   },
   {
-    tittle: "Aire 2",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
-    imgPath: "/img/carIcons/dash_10.jpg"
-  },
-  {
-    tittle: "Aire 3",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
-    imgPath: "/img/carIcons/dash_12.jpg"
-  },
-  {
-    tittle: "Agua 1",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
+    tittle: "Presión de las llantas",
+    desc: `Se representa con un signo de exclamación dentro de la forma de una herradura. Este indicador está controlado por el sistema de monitoreo de presión (TPMS) que detecta si algún neumático tiene pérdida de presión.`,
     imgPath: "/img/carIcons/dash_20.jpg"
   },
   {
-    tittle: "Bateria 1",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
+    tittle: "Batería",
+    desc: `El ícono de la batería parece un pila, en un extremo tiene un signo de más y en el otro uno de menos. Esta alerta indica que la batería no está trabajando correctamente. Puede ser que las terminales no estén bien conectadas y eso esté generando la alerta; sin embargo, también es posible que el carro requiera cambio de este elemento.`,
     imgPath: "/img/carIcons/dash_13.jpg"
   },
   {
-    tittle: "Carga 1",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
-    imgPath: "/img/carIcons/dash_14.jpg"
-  },
-  {
-    tittle: "Energia 1",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
+    tittle: "Luz apagada",
+    desc: `La figura de este testigo es un foco y quiere decir que una de las luces exteriores no funciona.`,
     imgPath: "/img/carIcons/dash_15.jpg"
   },
   {
-    tittle: "Aire X",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
-    imgPath: "/img/carIcons/dash_16.jpg"
-  },
-  {
-    tittle: "Faro 4",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
+    tittle: "Temperatura del líquido refrigerante",
+    desc: `La señal de un termómetro sobre lo que parecen ser olas de agua, en realidad es el indicador de temperatura del líquido refrigerante. Si se enciende, quiere decir que la temperatura excedió el límite. En este caso es mejor parar y esperar a que el vehículo se enfríe.`,
     imgPath: "/img/carIcons/dash_17.jpg"
   },
   {
-    tittle: "Faro 4",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
+    tittle: "Estacionamiento",
+    desc: `indica cuando está disponible el sistema de estacionamiento o parqueo automático. El icono en una P en el tablero.`,
     imgPath: "/img/carIcons/dash_18.jpg"
   },
   {
-    tittle: "Motor 1",
-    desc: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.`,
+    tittle: "Revisa el motor",
+    desc: `La luz que alerta sobre este tipo de fallas tiene justamente la forma de un motor. La alerta conocida como Check Engine (revisar motor en español) requiere como acción llevar de inmediato el vehículo a servicio con un mecánico que haga una revisión integral. Esta luz podría alertar desde que la tapa del tanque de gasolina esté abierta, que se requiere cambio de aceite hasta otros problemas mayores.`,
     imgPath: "/img/carIcons/dash_19.jpg"
   },
 ]

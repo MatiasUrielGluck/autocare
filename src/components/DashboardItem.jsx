@@ -35,22 +35,16 @@ export const DashboardItem = ({ dashInfo }) => {
           >
             <Typography variant="h6">{dashInfo.tittle}</Typography>
             <Button variant="outlined" onClick={handleViewMore}>
-              {!viewMore ? "Ver Mas" : "Ver Menos"}
+              {!viewMore ? "Ver mas" : "Ver Menos"}
             </Button>
           </Box>
-          <Typography>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-            velit illo doloribus eos molestias facilis quam ducimus perferendis
-            aspernatur, minus repellat numquam obcaecati dicta tempora sint ea
-            architecto possimus recusandae. A harum quas, voluptatibus soluta
-            ipsam tempora id excepturi rem delectus molestias, totam, dolorem
-            nisi. Nobis temporibus voluptatem, assumenda aut nisi sequi,
-            corporis ipsam rem, magnam numquam natus. Sequi, nobis vero eveniet
-            voluptate pariatur incidunt temporibus architecto repudiandae atque
-            non. Cumque nisi, blanditiis in harum doloribus temporibus
-            voluptatibus quisquam voluptate atque nihil consectetur aspernatur.
-            Doloribus saepe voluptatem ab neque, unde non possimus accusamus
-            vero magni esse officia nesciunt corporis error.
+          <Typography variant="h6">
+            <p
+              dangerouslySetInnerHTML={{
+                __html: dashInfo.desc.replaceAll("\n", "<br /><br />"),
+              }}
+            ></p>
+            {/* {dashInfo.desc} */}
           </Typography>
         </CardContent>
       </Box>

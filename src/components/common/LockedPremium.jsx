@@ -78,7 +78,9 @@ export const LockedPremium = ({ children }) => {
                   Este contenido solo esta disponible para usarios premium
                 </Typography>
                 <br></br>
-                <Button variant="contained">Desbloquear ahora por $4.99</Button>
+                <Button variant="contained">
+                  Desbloquear ahora por USD 3.99
+                </Button>
               </CardContent>
             </Card>
           </Container>
