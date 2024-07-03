@@ -6,11 +6,11 @@ export const categorias = {
       },
       {
          id: "1",
-         nombre: "Control agua limpia parabrisa"
+         nombre: "[Guia]Cómo cambiar una llanta"
       },
       {
          id: "2",
-         nombre: "Presión de aire"
+         nombre: "[Video]Cómo comprobar la presión de los neumáticos"
       },
       {
          id: "3",
@@ -18,11 +18,11 @@ export const categorias = {
       },
       {
          id: "4",
-         nombre: "Cambio/control de filtro"
+         nombre: "[Video]Cómo Cambiar El Aceite De Tu Auto"
       },
       {
          id: "5",
-         nombre: "Cambio/control de frenos"
+         nombre: "[Video]8 consejos para lavar el auto correctamente"
       },
    ]
 }
@@ -38,50 +38,56 @@ export const problema_info = [
    },
    {
       id: "1",
-      nombre: "Control agua limpia parabrisa",
-      info: `Claro, aquí tienes una instrucción muy resumida para controlar el agua del limpiaparabrisas de un auto:
-
-Ubica el depósito del limpiaparabrisas:
-
-Abre el capó del auto y busca el depósito del limpiaparabrisas, generalmente tiene una tapa con un símbolo de un parabrisas y un chorro de agua.
-Revisa el nivel de líquido:
-
-Abre la tapa y verifica si el nivel del líquido está bajo. Si es necesario, rellena con agua limpia o con una mezcla de agua y líquido limpiaparabrisas.
-Prueba el sistema:
-
-Cierra la tapa del depósito, arranca el auto y activa el limpiaparabrisas desde el interior del vehículo para asegurarte de que el sistema funcione correctamente.
-¡Y listo!`,
+      nombre: "[Guia]Cómo cambiar una llanta",
+      info: `¿Te quedaste en medio de la carretera con una llanta pinchada? ¡Quieres cambiar la llanta sin pedir la ayuda de nadie! Afortunadamente, cambiar llantas es una tarea fácil, siempre y cuando estés dispuesto a dar un pequeño esfuerzo.`,
       gallery: [
-         { media: "/img/1.jpg", caption: `Paso 1s` },
-         { media: "/img/2.jpg", caption: "Paso 2" },
-         { media: "/img/3.jpg", caption: "Paso 3" }
+         { media: "/img/cambiarllanta/1.jpeg", caption: `Encuentra un lugar plano, estable y seguro para cambiar la llanta. Necesitarás una superficie sólida y nivelada que evitará que el auto se mueva. Si estás cerca de una carretera, parquea tan lejos del tráfico como puedas y enciende las luces de emergencia. Evita estacionarte sobre el suelo blando y las colinas.` },
+         {
+            media: "/img/cambiarllanta/2.jpeg", caption: `Presiona el freno y coloca a tu auto en posición de parqueo. Si tienes transmisión estándar, coloca el auto en primera o en reversa.`
+         },
+         { media: "/img/cambiarllanta/3.jpeg", caption: `Coloca un objeto pesado (por ejemplo: una piedra, concreto, llanta de cambio, etc.) por delante y detrás de las ruedas.` },
+         {
+            media: "/img/cambiarllanta/4.jpeg", caption: `Retira la llanta de repuesto y la gata. Coloca la gata debajo de la llanta que vas a cambiar. Asegúrate de que la llanta entre en contacto con la porción de metal del auto.
+Muchos autos tienen moldes de plástico en la base. Si no colocas la gata en el lugar indicado, romperás el plástico cuando comiences a levantarlo. Si no estás seguro de cómo colocar la gata, lee el manual de instrucciones.
+Muchos autos modernos tienen una pequeña marca detrás de la llanta delantera, o en frente de la llanta trasera, donde se supone que debe estar la gata.
+En el caso de la mayoría de los camiones y autos viejos que tienen chasís, observa el lugar en el que debería estar la gata, por detrás de la llanta delantera o delante de la llanta trasera.` },
+         { media: "/img/cambiarllanta/5.jpeg", caption: `Levanta la gata hasta que puedas apoyar el auto (pero no levantarlo). La gata debe estar colocada de manera fija debajo del auto. Asegúrate de que la gata esté perpendicular al piso.` },
+         {
+            media: "/img/cambiarllanta/6.jpeg", caption: `Quita los tapacubos para llantas y afloja las tuercas al girarlas en sentido antihorario. No los quites todos; solo debes quitar la resistencia. Al mantener la llanta en el piso la primera vez que aflojas las tuercas, asegúrate de girar estas últimas en lugar de la llanta misma.
+Usa una llave inglesa que vino junto a tu auto, o una llave común. La llave inglesa debe tener diferentes tamaños con diferentes terminaciones. El tamaño correcto se deslizará por la tuerca.
+Procura prepararte para cualquier cambio imprevisto de llantas al guardar en el maletero los tubos del tamaño exacto para las tuercas, así como una llave de tubo.
+Puede tomar un poco de fuerza aflojar las tuercas. Si todo lo demás fracasa, puedes usar tu peso corporal o pararte sobre la llave (asegúrate de que la estás girando correctamente, es decir, en sentido antihorario). No obstante, utilizar tu peso corporal o pararte sobre la llave aumentará el riesgo de que desgastes las tuercas, ya que es difícil mantener el contacto completo.` },
+         {
+            media: "/img/cambiarllanta/7.jpeg", caption: `Gira la manija para colocar la llanta en el piso. Debes levantarlo lo suficiente como para quitar la llanta desinflada y reemplazarla con la llanta de repuesto.
+Mientras lo levantas, asegúrate de que el auto esté estable. Si notas alguna inestabilidad, baja la gata y resuelve el problema antes de volver a levantar el auto.
+
+Si notas que la gata se va hacia un ángulo, baja la altura y vuelve a posicionarlo para que puedas volver a levantarlo.
+Siempre es recomendable que tengas una gata pequeña a la mano a modo de soporte en caso de que la otra ceda durante el cambio de llanta. De esa manera, usar ambas gatas te mantendrá seguro en caso de que una de ellas falle.` },
+         {
+            media: "/img/cambiarllanta/8.jpeg", caption: `Quita las tuercas restantes. Gíralas en sentido antihorario hasta que salgan. Repite este paso con todas ellas y después quítalas por completo.
+Si bien es raro, algunos vehículos tienen tuercas roscadas inversas. Por lo general, se usan en autos más antiguos como los Chrysler y GM.` },
+         {
+            media: "/img/cambiarllanta/9.jpeg", caption: `Quita la llanta. Coloca la llanta desinflada por debajo del vehículo para que, si es que pasa algo, el vehículo caiga en la llanta desinflada y así evites cualquier accidente. Si la gata está sobre una superficie plana y sólida, no tienes por qué tener problemas.
+La llanta puede adherirse debido al óxido. Trata de presionar la mitad de la llanta con un mazo de goma para aflojarla, o usa la llanta de repuesto para empujarla hacia afuera.` },
+         {
+            media: "/img/cambiarllanta/10.jpeg", caption: `Coloca la llanta en el centro. Ten mucho cuidado al alinear la montura con los pernos de la llanta, luego coloca las tuercas.
+Asegúrate de colocar la llanta de repuesto de la manera correcta y no al revés. El cierre de la válvula de una llanta debe estar hacia afuera, lejos del vehículo.
+Si tu vehículo utiliza tuercas de estilo bellota, será fácil ponerlas atrás. Solo asegúrate de que la parte cónica de la tuerca mire de frente a la rueda al momento de ajustarla.` },
+         {
+            media: "/img/cambiarllanta/11.jpeg", caption: `Ajusta las tuercas hasta que estén listas. Deben girar con normalidad.
+Usando una llave inglesa, ajusta las tuercas lo más que puedas con la ayuda de un patrón de estrella. Para asegurarte de que la llanta esté equilibrada, no termines de ajustarla por completo. Dale la vuelta a cada tuerca hasta que estén completamente ajustadas.
+Evita usar demasiada fuerza ya que puedes alterar la gata. Si aprietas demasiado fuerte las tuercas, el auto podría fallar.` },
+         { media: "/img/cambiarllanta/12.jpeg", caption: `Baja el auto sin aplicar todo el peso en el neumático. Aprieta las tuercas lo más que puedas.` },
+         { media: "/img/cambiarllanta/13.jpeg", caption: `Baja el auto completamente y saca la gata. Termina de apretar todos las tuercas y vuelve a colocar las tapas de las llantas.` },
+         { media: "/img/cambiarllanta/14.jpeg", caption: `Coloca la llanta vieja en la cochera y llévala al mecánico. Obtén un estimado de cuánto te va a costar la reparación. Las perforaciones menores pueden costar menos de $15 cada una. Si no se puede reparar la llanta, puedes deshacerte de ella de manera correcta y comprar un repuesto.` }
       ],
    },
    {
       id: "2",
-      nombre: "Presión de aire",
-      info: `Por supuesto, aquí tienes una instrucción muy resumida para controlar la presión de aire de los neumáticos de un auto:
-
-Consigue un manómetro:
-
-Puedes usar un manómetro digital o analógico para medir la presión de los neumáticos.
-Revisa la presión recomendada:
-
-Consulta el manual del propietario o la etiqueta en el marco de la puerta del conductor para conocer la presión de aire recomendada para tus neumáticos.
-Mide la presión:
-
-Retira el tapón de la válvula de un neumático, coloca el manómetro en la válvula y lee la presión actual.
-Ajusta la presión:
-
-Si la presión está baja, añade aire con un compresor hasta alcanzar el nivel recomendado. Si está alta, deja salir un poco de aire.
-Repite el proceso:
-
-Haz lo mismo con los otros neumáticos, incluyendo el de repuesto.
-¡Y eso es todo!`,
+      nombre: "[Video]Cómo comprobar la presión de los neumáticos",
+      info: `Los neumáticos son un elemento fundamental para nuestra seguridad al volante. Al fin y al cabo, son el único componente del coche que está en contacto directo con el asfalto. Son, por tanto, los responsables de que la adherencia y la tracción sean las óptimas.`,
       gallery: [
-         { media: "/img/1.jpg", caption: `Paso 1s` },
-         { media: "/img/2.jpg", caption: "Paso 2" },
-         { media: "/img/3.jpg", caption: "Paso 3" }
+         { video: "-eYcO4wNowk", caption: `` },
       ],
    },
    {
@@ -135,113 +141,18 @@ Revisa nuevamente el aceite. Saca la varilla y revisa el nivel de aceite. Repite
    },
    {
       id: "4",
-      nombre: "Cambio/control de filtro",
-      info: `Claro, aquí tienes una instrucción muy resumida para cambiar o controlar el filtro de aire de un auto:
-
-### Control del Filtro de Aire
-
-1. **Ubica la caja del filtro de aire:**
-   - Abre el capó y busca la caja del filtro de aire, generalmente ubicada cerca del motor y conectada a un tubo de admisión de aire.
-
-2. **Abre la caja del filtro de aire:**
-   - Normalmente, la caja está asegurada con clips o tornillos. Suelta los clips o tornillos para abrir la caja.
-
-3. **Verifica el estado del filtro:**
-   - Saca el filtro de aire y revisa su estado. Si está sucio o lleno de polvo y escombros, es hora de cambiarlo.
-
-### Cambio del Filtro de Aire
-
-1. **Compra un filtro nuevo:**
-   - Asegúrate de comprar un filtro de aire adecuado para tu vehículo, según las especificaciones del fabricante.
-
-2. **Retira el filtro viejo:**
-   - Saca el filtro viejo de la caja del filtro de aire.
-
-3. **Limpia la caja del filtro:**
-   - Limpia el interior de la caja del filtro de aire con un trapo limpio para eliminar cualquier residuo de polvo o suciedad.
-
-4. **Instala el filtro nuevo:**
-   - Coloca el filtro nuevo en la caja del filtro de aire, asegurándote de que esté bien asentado.
-
-5. **Cierra la caja del filtro de aire:**
-   - Vuelve a asegurar la caja del filtro de aire con los clips o tornillos.
-
-### Consejos Adicionales
-
-- **Revisa el filtro de aire regularmente:**
-   - Es recomendable revisar el filtro de aire cada 12,000 a 15,000 kilómetros, o según las recomendaciones del fabricante del vehículo.
-
-- **Sustitución según el entorno:**
-   - Si conduces frecuentemente en áreas polvorientas o con mucho tráfico, puede ser necesario cambiar el filtro de aire con más frecuencia.
-
-¡Y eso es todo! Cambiar o controlar el filtro de aire es una tarea simple que puede mejorar el rendimiento del motor y la eficiencia del combustible de tu vehículo.`,
+      nombre: "[Video]Cómo Cambiar El Aceite De Tu Auto",
+      info: `Paso a paso en el proceso de cómo cambiar el aceite de motor de tu auto.`,
       gallery: [
-         { media: "/img/1.jpg", caption: `Paso 1s` },
-         { media: "/img/2.jpg", caption: "Paso 2" },
-         { media: "/img/3.jpg", caption: "Paso 3" }
+         { video: "Q-aKhjJOO1w", caption: `` }
       ],
    },
    {
       id: "5",
-      nombre: "Cambio/control de frenos",
-      info: `Claro, aquí tienes una instrucción muy resumida para cambiar o controlar los frenos de un auto:
-
-### Control de los Frenos
-
-1. **Estaciona en un lugar seguro:**
-   - Asegúrate de que el auto esté en una superficie plana y pon el freno de mano.
-
-2. **Revisa el nivel de líquido de frenos:**
-   - Abre el capó y localiza el depósito de líquido de frenos. Asegúrate de que el nivel esté entre las marcas de "mín" y "máx".
-
-3. **Inspecciona las pastillas y discos de freno:**
-   - Quita la rueda para tener acceso a las pastillas y discos de freno. Verifica que las pastillas no estén demasiado desgastadas y que los discos no tengan surcos profundos.
-
-### Cambio de las Pastillas de Freno
-
-1. **Reúne los materiales:**
-   - Necesitarás pastillas de freno nuevas, una llave para ruedas, una llave para el caliper, un gato y soportes, y una herramienta para retraer el pistón del caliper.
-
-2. **Levanta el auto:**
-   - Usa el gato para levantar el auto y asegúralo con soportes.
-
-3. **Quita la rueda:**
-   - Usa la llave para quitar los pernos y retirar la rueda.
-
-4. **Retira el caliper:**
-   - Afloja y retira los pernos del caliper usando la llave para el caliper. Suspende el caliper con un gancho o una cuerda para no dañar la manguera de freno.
-
-5. **Saca las pastillas viejas:**
-   - Retira las pastillas de freno desgastadas del soporte del caliper.
-
-6. **Instala las pastillas nuevas:**
-   - Coloca las nuevas pastillas de freno en el soporte del caliper.
-
-7. **Retrae el pistón del caliper:**
-   - Usa la herramienta para retraer el pistón del caliper para que haya espacio para las nuevas pastillas.
-
-8. **Vuelve a colocar el caliper:**
-   - Coloca el caliper en su posición y aprieta los pernos.
-
-9. **Vuelve a montar la rueda:**
-   - Coloca la rueda y aprieta los pernos.
-
-10. **Repite el proceso:**
-    - Haz lo mismo con las otras ruedas si es necesario.
-
-### Consejos Adicionales
-
-- **Revisa los frenos regularmente:**
-   - Es recomendable revisar el estado de las pastillas y discos de freno cada 10,000 a 15,000 kilómetros, o según las recomendaciones del fabricante.
-
-- **Prueba de frenos:**
-   - Después de cambiar las pastillas, prueba los frenos en un área segura para asegurarte de que funcionan correctamente.
-
-¡Y eso es todo! Cambiar o controlar los frenos es esencial para mantener la seguridad y el rendimiento de tu vehículo.`,
+      nombre: "[Video]8 consejos para lavar el auto correctamente",
+      info: `Por lo general creemos que para lavar nuestro auto necesitamos solo agua y jabón, sin embargo, mantenerlo en perfecto estado va un poco más allá de eso. Por eso en este video te daremos 8 consejos increíble para dejar como nuevo tu automóvil.`,
       gallery: [
-         { media: "/img/1.jpg", caption: `Paso 1s` },
-         { media: "/img/2.jpg", caption: "Paso 2" },
-         { media: "/img/3.jpg", caption: "Paso 3" }
+         { video: "Cs3LdmC0nLI", caption: `` },
       ],
    },
 ]

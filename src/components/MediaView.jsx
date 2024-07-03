@@ -40,18 +40,35 @@ export const MediaView = ({ gallery }) => {
               sx={{
                 // maxHeight: "80vh",
                 borderRadius: "2.3rem",
+                minHeight: "30vh",
               }}
             >
-              <Container sx={{}}>
-                <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <Container>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    // alignContent: "center",
+                    // justifyContent: "center",
+                    // justifyItems: "center",
+                  }}
+                >
                   {media.media ? (
                     <img key={idx} src={`${media.media}`} />
                   ) : (
-                    <YouTube videoId={media.video} opts={videoSize} />
+                    <YouTube
+                      videoId={media.video}
+                      opts={videoSize}
+                      style={{
+                        margin: "auto",
+                        marginTop: "1.5rem",
+                      }}
+                    />
                   )}
 
                   <Container
                     sx={{
+                      minHeight: "40vh",
                       maxHeight: "60vh",
                       overflow: "auto",
                       paddingX: "2.3rem",
